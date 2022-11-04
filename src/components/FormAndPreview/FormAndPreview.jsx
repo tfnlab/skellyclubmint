@@ -211,7 +211,7 @@ class FormAndPreview extends Component {
         <form onSubmit={this.callClaimPunkFromApp} className="pt-4 mt-1">
           <div className="row">
           <div className="col-md-12">
-            Mint Price 1 ETH
+            Mint Price 0.01 ETH
             <div>
               <button
                 id="mintBtn22"
@@ -230,7 +230,7 @@ class FormAndPreview extends Component {
         </div>
 
           <hr className="my-4" />
-              Metagascar &copy; 2021 Metagascar Project Inc. All rights reserved.
+              Skelly Club &copy; 2021 Metagascar Project Inc. All rights reserved.
           <hr className="my-4" />
       </div>
     );

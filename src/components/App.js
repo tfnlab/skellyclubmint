@@ -130,8 +130,8 @@ class App extends Component {
 //        if (networkData) {
           this.setState({ loading: true });
 
-          const { abi } = require('../abis/BurningMeta.json');
-          var smart_contract_interface = new web3.eth.Contract(abi, '0xBbC149c22b73C29b59cd0e17Ceff21Fb3e41397F')
+          const { abi } = require('../abis/SkellyClub.json');
+          var smart_contract_interface = new web3.eth.Contract(abi, '0xd629dBd849191Cd0384373b77B0E587f1e3a5c82')
 
 
           const cryptoBoysContract = smart_contract_interface;
@@ -246,10 +246,10 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
 };
 claimPunk = async (punkIndex) => {
 
-  const price = window.web3.utils.toWei("1", "Ether") * punkIndex;
+  const price = window.web3.utils.toWei("0.01", "Ether") * punkIndex;
   this.setState({ loading: true });
     this.state.cryptoBoysContract.methods
-      .paidMint(punkIndex)
+      .publicSaleMint(punkIndex)
       .send({ from: this.state.accountAddress, value: price })
       .on("confirmation", () => {
         localStorage.setItem(this.state.accountAddress, new Date().getTime());
@@ -467,7 +467,7 @@ getPunkOwner = async (punkIndex) => {
                   )}
               />
               <Route path='/nftrade' component={() => {
-                   window.location.href = 'https://opensea.io/collection/burningmeta';
+                   window.location.href = 'https://opensea.io/collection/skellyclub';
                    return null;
               }}/>
 
