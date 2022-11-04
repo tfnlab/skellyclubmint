@@ -53,12 +53,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
     <div>
       <div className="jumbotron">
         <h1 className="display-5">
-          SkellyClub
+          Skelly Club
         </h1>
-
         BRINGING CREATIVITY, FASHION AND FUN TO THE DEAD
         <hr className="my-4" />
-        Once a year we gather in the Metaverse to burn Meta. The actual burn may happen in Decentraland, Otherside or Metagascar Metaverse. Most likely we will leverage all platforms, as we believe it’s going to be a Multi-Metaverse gathering. BurningMeta will take place in Rock City (made-up city), Rock City is divided into 6 rows and 32 sections, each camp site has the potential of having 40 camps. There are a total of 10,000 camps randomly distributed across Rock City. This NFT is your ticket to Camp in Rock City during BurningMeta. 5,000 are available to mint for FREE, another 5,000 are available to mint for 0.005 ETH Minting website will be up shortly at TFNLab.com
+        <img src="images/skellyclub.png" width="100%" />
         <hr className="my-4" />
         <button
           onClick={connectToMetamask}
@@ -77,7 +76,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
       <div className="container">
         <hr className="my-4" />
-            Skelly Club &copy; 2021 Metagascar Project Inc. All rights reserved.
+            Skelly Club &copy; 2021 All rights reserved.
         <hr className="my-4" />
       </div>
     </div>
