@@ -5,16 +5,6 @@ import Web3 from 'web3';
 
 //import { Entity, Scene } from "aframe-react";
 import "./styles.css";
-import "aframe";
-import {Entity, Scene} from 'aframe-react';
-
-import Environment from "./Environment";
-import InteractiveBox from "./InteractiveBox";
-import "aframe-event-set-component"; // NB: This enables event-set__click and such like, see https://www.npmjs.com/package/aframe-event-set-component
-import AutoDetectControllers from "./AutoDetectControllers";
-import "networked-aframe";
-
-require('aframe-mirror-component');
 
 const items = []
 const itemsonchain = []
