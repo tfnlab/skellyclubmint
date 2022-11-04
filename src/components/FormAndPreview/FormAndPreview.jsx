@@ -191,7 +191,7 @@ class FormAndPreview extends Component {
         <div class="container">
         <div class="card col-md-12 text-center" >
                     <div class="card-body">
-    <h6 class="card-subtitle mb-2">Mint Amount (Max 3 per Wallet)</h6>
+    <h6 class="card-subtitle mb-2">Mint Amount (Max 5 per Wallet)</h6>
     <div>
       <input
         required
@@ -230,7 +230,7 @@ class FormAndPreview extends Component {
         </div>
 
           <hr className="my-4" />
-              Skelly Club &copy; 2021 Metagascar Project Inc. All rights reserved.
+              Skelly Club &copy; 2021 All rights reserved.
           <hr className="my-4" />
       </div>
     );
