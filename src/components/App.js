@@ -247,7 +247,7 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
 claimPunk = async (punkIndex) => {
 
   let totalSupply = await this.state.cryptoBoysContract.methods
-    .totoalSupply()
+    .totalSupply()
     .call();
 
   if (totalSupply > 2000){
