@@ -246,16 +246,32 @@ offerPunkForSale = async (punkIndex, punkPrice) => {
 };
 claimPunk = async (punkIndex) => {
 
-  const price = window.web3.utils.toWei("0.01", "Ether") * punkIndex;
-  this.setState({ loading: true });
-    this.state.cryptoBoysContract.methods
-      .publicSaleMint(punkIndex)
-      .send({ from: this.state.accountAddress, value: price })
-      .on("confirmation", () => {
-        localStorage.setItem(this.state.accountAddress, new Date().getTime());
-        this.setState({ loading: false });
-        window.location.reload();
-      });
+  let totalSupply = await this.state.cryptoBoysContract.methods
+    .totoalSupply()
+    .call();
+
+  if (totalSupply > 2000){
+    const price = window.web3.utils.toWei("0.01", "Ether") * punkIndex;
+    this.setState({ loading: true });
+      this.state.cryptoBoysContract.methods
+        .publicSaleMint(punkIndex)
+        .send({ from: this.state.accountAddress, value: price })
+        .on("confirmation", () => {
+          localStorage.setItem(this.state.accountAddress, new Date().getTime());
+          this.setState({ loading: false });
+          window.location.reload();
+        });
+  }else{
+    this.setState({ loading: true });
+      this.state.cryptoBoysContract.methods
+        .freeMint(punkIndex)
+        .send({ from: this.state.accountAddress})
+        .on("confirmation", () => {
+          localStorage.setItem(this.state.accountAddress, new Date().getTime());
+          this.setState({ loading: false });
+          window.location.reload();
+        });
+  }
 };
 
 
