@@ -57,6 +57,8 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         </h1>
         BRINGING CREATIVITY, FASHION AND FUN TO THE DEAD
         <hr className="my-4" />
+         We are a company that specializes in creating high quality 3D and 2D apparel and clothing designs. Our team of experienced designers have created cutting edge designs that are perfect for any occasion. We pride ourselves on using the latest technology and materials to create unique and fashionable clothing and apparel pieces that you can enjoy wearing for years to come.
+         <hr className="my-4" />
         <img src="images/skellyclub.png" width="100%" />
         <hr className="my-4" />
         <button
