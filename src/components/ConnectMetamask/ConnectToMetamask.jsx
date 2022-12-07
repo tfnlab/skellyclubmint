@@ -58,7 +58,11 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
         BRINGING CREATIVITY, FASHION AND FUN TO THE DEAD
         <hr className="my-4" />
          We are a company that specializes in creating high quality 3D and 2D apparel and clothing designs. Our team of experienced designers have created cutting edge designs that are perfect for any occasion. We pride ourselves on using the latest technology and materials to create unique and fashionable clothing and apparel pieces that you can enjoy wearing for years to come.
+         We help clothing designers bridge their work into both 3D digital and physical work, making it easy to create stunning runway-ready designs. Our team of experts can help you realize your vision and turn your ideas into tangible 3D and 2D pieces. From concept to completion, our aim is to provide the best possible experience when creating fashion pieces.
+
          <hr className="my-4" />
+         <a href="https://opensea.io/collection/skellyclub" >OpenSea</a>
+         
         <img src="images/skellyclub.png" width="100%" />
         <hr className="my-4" />
         <button
