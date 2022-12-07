@@ -62,7 +62,7 @@ const ConnectToMetamask = ({ connectToMetamask }) => {
 
          <hr className="my-4" />
          <a href="https://opensea.io/collection/skellyclub" >OpenSea</a>
-         
+         <hr className="my-4" />         
         <img src="images/skellyclub.png" width="100%" />
         <hr className="my-4" />
         <button
